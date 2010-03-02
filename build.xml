@@ -27,12 +27,12 @@
 **
 **
 -->
-<project name="myPluginName" default="dist" basedir=".">
+<project name="buildings_tools" default="dist" basedir=".">
 
 	<!-- enter the SVN commit message -->
-	<property name="commit.message" value="Commit message" />
+	<property name="commit.message" value="Move buildings_tools plugin to SVN" />
 	<!-- enter the *lowest* JOSM version this plugin is currently compatible with -->
-	<property name="plugin.main.version" value="" />
+	<property name="plugin.main.version" value="2830" />
 
 
 	<!--
@@ -99,13 +99,16 @@
         ************************************************
     -->
 			<manifest>
-				<attribute name="Author" value="..."/>
-				<attribute name="Plugin-Class" value="..."/>
+		                <attribute name="Author" value="Upliner"/>
+		                <attribute name="Plugin-Class" value="buildings_tools.BuildingsToolsPlugin"/>
 				<attribute name="Plugin-Date" value="${version.entry.commit.date}"/>
-				<attribute name="Plugin-Description" value="..."/>
-				<attribute name="Plugin-Link" value="..."/>
+		                <attribute name="Plugin-Description" value="Tools for drawing buildings."/>
+		                <attribute name="ru_Plugin-Description" value="Инструменты для прорисовки зданий."/>
+		                <attribute name="Plugin-Link" value="http://wiki.openstreetmap.org/wiki/JOSM/Plugins/BuildingsTools"/>
+		                <attribute name="ru_Plugin-Link" value="http://wiki.openstreetmap.org/wiki/RU:JOSM/Plugins/BuildingsTools"/>
 				<attribute name="Plugin-Mainversion" value="${plugin.main.version}"/>
 				<attribute name="Plugin-Version" value="${version.entry.commit.revision}"/>
+		                <attribute name="2561_Plugin-Url" value="29;http://upliner.openstreetmap.ru/josm/buildings_tools/2561/buildings_tools.jar"/>
 			</manifest>
 		</jar>
 	</target>
